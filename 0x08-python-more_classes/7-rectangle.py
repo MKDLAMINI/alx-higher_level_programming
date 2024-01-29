@@ -5,7 +5,7 @@
 class Rectangle:
     """Represent a rectangle.
 
-    Private_Instance_Attributes:
+    Attributes:
         number_of_instances (int): The number of Rectangle instances.
         print_symbol (any): The symbol used for string representation.
     """
@@ -14,7 +14,7 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """Initialzie a new Rectangle.
+        """Initalize a new Rectangle.
 
         Args:
             width (int): The width of the new rectangle.
@@ -26,13 +26,13 @@ class Rectangle:
 
     @property
     def width(self):
-        """Grt/set the width of the Rectangle."""
+        """Get/set the width of the Rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
-            raise TypeError("which must be an integer")
+            raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
@@ -69,7 +69,7 @@ class Rectangle:
 
         rtg = []
         for i in range(self.__height):
-            rtg.append(str(self.print_symbol)) for j in range(self.__width)]
+            [rtg.append(str(self.print_symbol)) for j in range(self.__width)]
         if i != self.__height - 1:
             rtg.append("\n")
         return ("".join(rtg))
