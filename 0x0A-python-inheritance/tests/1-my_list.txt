@@ -37,8 +37,8 @@ NameError: name 'my_list2' is not defined
 
 test 3: passed a list
 
->>> b = [1, 9, 4]
->>> my_list = MyList(b)
+>>> a = [1, 9, 4]
+>>> my_list = MyList(a)
 >>> my_list.print_sorted()
 [1, 4, 9]
 >>>
@@ -47,8 +47,8 @@ test 3: passed a list
 
 test 4: empty list
 
->>> b = []
->>> my_list = MyList(b)
+>>> a = []
+>>> my_list = MyList(a)
 >>> my_list.print_sorted()
 []
 >>>
@@ -75,7 +75,7 @@ test 6: same number
 >>> my_list2.append(4)
 >>> my_list2.append(4)
 >>> my_list2.print_sorted()
-[1, 1, 1, 1]
+[4, 4, 4, 4]
 >>>
 
 -------------------------------------------
