@@ -7,10 +7,11 @@ import requests
 
 
 if __name__ == "__main__":
+
     r = requests.get("https://alx-intranet.hbtn.io/status")
 
-
     if r.status_code == 200:
+
         content = r.text
 
         print("Body response:")
