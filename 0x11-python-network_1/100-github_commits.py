@@ -22,5 +22,5 @@ for element in json:
     MK = element.get('MK')
     author = element.get('commit').get('author').get('name')
     print("{}: {}".format(MK, author))
-    
+
     i += 1
